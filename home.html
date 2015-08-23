@@ -1,0 +1,36 @@
+<!DOCTYPE html> 
+<html> 
+	<head> 
+	<!--Nicholas Paul 211296339-->
+	<title>Where you gonna eat?</title> 
+	<!--Here we set up the jQuery stuff-->
+	<meta name="viewport" content="width=device-width, initial-scale=1"> 
+
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.0/jquery.mobile-1.0.min.css" />
+	<script type="text/javascript" src="http://code.jquery.com/jquery-1.6.4.min.js"></script>
+	<script type="text/javascript" src="http://code.jquery.com/mobile/1.0/jquery.mobile-1.0.min.js"></script>
+	</head>   
+	<body>
+		<div data-role="page" id="home" data-theme="e"><!--Here we set up the basic page with the theme in it-->
+			<div data-role="content"><!--Here we decide where the main content is-->
+				<div data-role="header" id="branding"><!--this is to have a nice heading-->
+					<h1>Got the munchies? </h1><!--this is a poorly chosen name, but whatever works I suppose-->
+				</div>
+				<div class="choice_list"><!--this sets up the list to choose from-->
+					<h1> What's it gonna be? </h1>
+					<ul data-role="listview" data-inset="true" ><!--this provides the layout-->
+						<li><a href="location.html" data-transition="slidedown"> <img src="pizza.png"/> <h3> Delicious pizza</h3></a></li><!--here we have links to the next page with some quality paint images-->
+						<li><a href="location.html" data-transition="slidedown"> <img src="cake.png"/> <h3> Sweet cake </h3></a></li>
+						<li><a href="location.html" data-transition="slidedown"> <img src="soup.png"/> <h3> Soup of the Day</h3></a></li>
+						<li><a href="location.html" data-transition="slidedown"> <img src="kebab.png"/> <h3> Kebab</h3></a></li>
+						<li><a href="location.html" data-transition="slidedown"> <img src="fire engine.png"/> <h3> Spicy Fire engine </h3></a></li>
+						<li><a href="location.html" data-transition="slidedown"> <img src="taco.png"/> <h3> Taco flavored kisses</h3></a></li>
+					</ul>
+				</div> 
+				<div id="developerinfo"><!--A simple link to the dev page-->
+					<li><a href="dev.html" data-role="button"> <h2>Developer information</h2></a></li>
+				<div>
+			</div>
+		</div>
+	</body>
+</html>

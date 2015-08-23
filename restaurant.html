@@ -1,0 +1,63 @@
+<!DOCTYPE html> 
+<html> 
+	<head> 
+	<!--Nicholas Paul 211296339-->
+	<title>Where you gonna eat?</title> 
+	<!--Here we set up the jQuery stuff-->
+	<meta name="viewport" content="width=device-width, initial-scale=1"> 
+
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.0/jquery.mobile-1.0.min.css" />
+	<script type="text/javascript" src="http://code.jquery.com/jquery-1.6.4.min.js"></script>
+	<script type="text/javascript" src="http://code.jquery.com/mobile/1.0/jquery.mobile-1.0.min.js"></script>
+	</head> 
+	<body>
+		<div id="pizzabutt" data-role="page" data-add-back-btn="true" data-theme="e"><!--Here we set up the basic page with the theme in it-->
+			<div data-role="header"><!--this is to have a nice heading-->
+				<h1> Got the munchies?</h1>
+			</div> 
+			<div data-role="content"><!--Here we decide where the main content is-->
+				<div class="ui-grid-a" id="pizzainfo"><!--Breaking it into 2 grids to hold more info on the screen at once-->
+					<div class="ui-block-a"><!--here is grid 1-->
+						<h1> Pizza Butt</h1>
+						<p><strong>  Pizza hut? more like Pizza BUTT</strong></p><!--Classic joke-->
+						<p> On the menu: </p>
+						<ul>
+							<li> Pizza</li>
+							<li> Pizza </li>
+							<li> Pizza pie </li>
+						</ul>
+					</div>
+					<div class="ui-block-b"><!--here is grid 2-->
+						<p><img src="pizzabutt.png" alt="crappy paintjob"/></p>
+						<p><a href="http://www.google.com.au" rel="external" data-role="button"> See our website</a></p><!--obviously no website, just google-->
+					</div>
+				</div>
+				<div class="ui-grid-a" id="contact_info">
+					<div class="ui-block-a">
+						<h2> Contact us</h2>
+						<p>696969 Smashmouth way</p>
+						<p> 3000 Melbourne	</p>
+					</div>
+					<div class="ui-block-b">
+						<img src="locationmap01.png" alt="Location of store"/><!--more crappy paint work, (I don't wanna get sued)-->
+					</div>
+				</div>
+				<div id="contact_buttons"><!--these links work on mobile, the phone one does not work on pc though, phone number is the John Cena hotline-->
+					<a href="https://www.google.com/maps/place/Pizza+Bro%27s/@51.8858383,0.8946985,17z/data=!3m1!4b1!4m2!3m1!1s0x47d904f14ccf3aaf:0x88649e32a195de37" data-role="button" data-icon="maps"> Find us on Google Maps </a>
+					<a href="tel:001-515-808-2362"  data-role="button" data-icon="tel"> Call us </a>
+				</div>
+				<div id="notation">
+					<form><!--Simplest form of form, increased chance of actually submitting feedback-->
+						<label for="select-choice-0" class="select"><h2> Feedback </h2></label>
+						<select name="feedbackform" id="feedbackform" data-native-menu="false" data-theme="e" >
+						<option value="one" class="one"> bad </option>
+						<option value="two" class="two">Pretty bad </option>
+						<option value="three" class="three">Not bad </option>
+						<option value="four" class="four"> Top quality eatin' </option>
+						</select>
+					</form>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
